@@ -32,23 +32,23 @@ leastFactor = function(n){
 }
 
 function init() {
-	try {
-		var number = document.getElementById('number');
-		var value;
-		var answer = document.getElementById('answer');
+  try {
+    var number = document.getElementById('number');
+    var value;
+    var answer = document.getElementById('answer');
 
-		number.addEventListener('change', function(e) {
-			value = number.value;
-			if(isPrime(value) === true){
-				answer.innerHTML = 'Да';
-			} else {
-				answer.innerHTML = 'Нет';
-			}
-		});
-	}
-	catch(e) {
-		alert(e);
-	}
+    number.addEventListener('change', function(e) {
+      value = number.value;
+      if(isPrime(value) === true){
+        answer.innerHTML = 'Да';
+      } else {
+        answer.innerHTML = 'Нет';
+      }
+    });
+  }
+  catch(e) {
+    console.log(e);
+  }
 }
 
 window.addEventListener('load', init, false);
