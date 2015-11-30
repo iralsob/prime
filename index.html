@@ -5,13 +5,14 @@
 		<title>test</title>
 		<link href="css/normalize.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 		<script src="js/script.js"></script>
 	</head>
 	<body>
 		<div class="wrapper">
 			<div class="container">
 				<h1>Введите Число</h1>
-				<input type="number" id="number"/>
+				<input type="number" id="number" placeholder="0" onkeypress='return (event.charCode >= 48 && event.charCode <= 57 ) || event.charCode == 13'/>
 				<div class="answer" id="answer"></div>
 			</div>
 		</div>
